@@ -13,7 +13,11 @@ const INCREMENT=()=>{
     return;}
   // counter =counter+1;
   else{
-  setCounter(counter+1);//updating state variable ,updates counter every where in UI
+  setCounter(prevcounter=>prevcounter+1);//updating state variable ,updates counter every where in UI
+    setCounter(prevcounter=>prevcounter+1)
+    setCounter(prevcounter=>prevcounter+1)
+    setCounter(prevcounter=>prevcounter+1)
+    setCounter(prevcounter=>prevcounter+1)
   console.log("clicked",counter);//function body
 }
 }
