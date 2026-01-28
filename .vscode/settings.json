@@ -1,4 +1,8 @@
 {
     "liveServer.settings.port": 5501,
-    "rapidapi.hub.enabled": true
+    "rapidapi.hub.enabled": true,
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "node"
+    },
+    "github.copilot.chat.models.claude-sonnet-4.5.enabled": true
 }
