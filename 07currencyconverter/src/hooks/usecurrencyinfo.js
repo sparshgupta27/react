@@ -54,7 +54,7 @@ function useCurrencyInfo(currency) {
                     setData(allCurrencyRates[currency] || fallbackRates.usd);
                 }
             })
-            .catch((error) => {
+            .catch(() => {
                 console.log("Using fallback currency data");
                 // Use fallback data when API fails
                 setData(allCurrencyRates[currency] || fallbackRates.usd);

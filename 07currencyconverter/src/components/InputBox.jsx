@@ -1,4 +1,4 @@
-import React,{useId} from 'react'
+import React from 'react'
 
 
 function InputBox({
@@ -13,7 +13,6 @@ function InputBox({
   
     className = "",
 }) {
-    const amountInputId = useId();
    
 
     return (
