@@ -41,9 +41,9 @@ const generateAllRates = () => {
 const allCurrencyRates = generateAllRates()
 
 function useCurrencyInfo(currency) { 
-    const[data,setData]=useState({})
+    const [data, setData] = useState({})
     useEffect(() => {
-        // Try to fetch from API first
+        // Try to fetch from API first (note: will use fallback data if API is unavailable)
         fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@2024-03-06/v1/currencies/${currency}.json`)
             .then((res) => res.json())
             .then((res) => {
@@ -62,5 +62,5 @@ function useCurrencyInfo(currency) {
     
 }, [currency]);
     return data
-    }
+}
 export default useCurrencyInfo;
